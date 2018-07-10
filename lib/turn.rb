@@ -25,3 +25,6 @@ def move(board, idx, token="X")
   board[idx] = token
 end
 
+def input_to_index
+  
+end
