@@ -1,9 +1,12 @@
 #turn method 
 def turn(board)
-  puts "Please enter 1-9:"
-  input = gets.chomp
-  input_to_index(input)
-  
+  until valid_move?
+    puts "Please enter 1-9:"
+    input = gets.chomp
+    input = input_to_index(input)
+    if valid_move?(board, idx)
+      move(board, input, "X")
+    
   
 end
 
@@ -28,6 +31,4 @@ end
 def input_to_index(user_input)
   a = user_input.to_i - 1
   a.to_s
-  
-  
 end
