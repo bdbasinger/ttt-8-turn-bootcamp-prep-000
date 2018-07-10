@@ -34,6 +34,5 @@ def move(board, idx, token="X")
 end
 
 def input_to_index(user_input)
-  a = user_input.to_i - 1
-  a.to_s
+  user_input.to_i - 1
 end
