@@ -4,11 +4,13 @@ def turn
 end
 
 
+#helper methods
 def display_board(board)
   
 end 
 
-#helper method
 def valid_move?(board, index)
   
 end
+
+def move(board, idx, token="X")
