@@ -6,6 +6,7 @@ def turn(board)
     input = input_to_index(input)
     if valid_move?(board, idx)
       move(board, input, "X")
+      
     
   
 end
@@ -21,7 +22,11 @@ def display_board(board)
 end 
 
 def valid_move?(board, idx)
-  if idx.between?(0, 8) && 
+  if (idx.to_i.between?(0, 8)) && (board[idx] == " ")
+    return true 
+  else
+    return false
+  end
 end
 
 def move(board, idx, token="X")
