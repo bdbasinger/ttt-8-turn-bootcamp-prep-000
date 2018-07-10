@@ -6,6 +6,9 @@ def turn(board)
     input = input_to_index(input)
     if valid_move?(board, idx)
       move(board, input, "X")
+      display_board(board)
+    end
+  end
       
     
   
