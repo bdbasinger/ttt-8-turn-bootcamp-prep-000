@@ -2,6 +2,7 @@
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.chomp
+  puts input.class
 end
 
 
