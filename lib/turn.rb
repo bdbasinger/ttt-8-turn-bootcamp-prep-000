@@ -12,6 +12,7 @@ def turn(board)
 end
 
 
+
 #helper methods
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
